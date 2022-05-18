@@ -1,0 +1,12 @@
+{
+  "name": "Get Plan Plugin",
+  "description": "Get Plan Plugin",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [{
+    "css": ["bootstrap.min.css"],
+    "js": ["jquery-3.6.0.min.js", "bootstrap.min.js", "content.js"],
+    "run_at": "document_idle",
+    "matches": ["https://getplan.co/u/me/*/list"]
+  }]
+}
